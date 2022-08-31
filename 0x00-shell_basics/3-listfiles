@@ -1,2 +1,2 @@
 #!/bin/bashJ
-ls -a
+ls -l
