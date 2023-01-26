@@ -1,5 +1,5 @@
 #!/bin/bash
-# Tis script displays Best School 10 times, but for the 9th time print 'hi'
+# This script displays "Best School" 10 times, but for the 9th time print 'hi'
 
 i=1
 while [ "$i" -le 10 ]
