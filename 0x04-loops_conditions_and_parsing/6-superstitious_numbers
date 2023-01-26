@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # Prints 1 to 20; "Bad luck from China" the 4th'
 # "bad luck from Japan" the 9th, and "bad luck from Italy" the 17th
 
