@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-#read and cut stuff
+# Read and extract fields in file
 
-while read name
+FILE="/etc/passwd"
+
+while read LINE
 do
-    echo "$name" | cut -d":" -f1,3,6
-done < /etc/passwd
+    echo "$LINE" | cut -d ":" -f1,3,6
+done < "$FILE"
