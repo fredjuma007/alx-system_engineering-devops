@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-#by Fred
+# By Fred
 
 puts ARGV[0].scan(/h.n/).join
