@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
-#install nginx and redirects to hello string
+# This script installs a nginx web server
 
-sudo apt-get  update -y
-sudo apt-get install nginx -y
-
-# allowing nginx on firewall
-ufw allow 'Nginx HTTP'
-
-# Creating new index
-echo "Hello World!" > /var/www/html/index.html
-
-# Starting nginx
-sudo service nginx start
+sudo apt update
+sudo apt install nginx -y
+sudo ufw allow 22
+sudo ufw allow 80
+sudo ufw --force enable
+sudo ufw status
+systemctl status nginx
+echo 'Hello World!' | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
+sudo service nginx restart
