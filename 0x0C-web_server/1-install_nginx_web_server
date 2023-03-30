@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-#install nginx and redirects to hello world string
-
+# Configures a new ubuntu machine by installing
+# Nginx where it should be listening on port 80
+# Serve a page that would return a Hello World string
 sudo apt-get  update -y
 sudo apt-get install nginx -y
 
