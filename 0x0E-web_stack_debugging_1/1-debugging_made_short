@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#well this is a comment
 sed -i 's/8080 default/80 default/' /etc/nginx/sites-enabled/default
 sudo service nginx restart
 pkill -o nginx
