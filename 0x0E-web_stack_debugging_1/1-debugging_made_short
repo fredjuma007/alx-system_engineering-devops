@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#scripts theat opens port 80
-sed -i 's/8080 default/80 default/' /etc/nginx/sites-enabled/default
-pkill -o nginx
+#Script that open port 80
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+service nginx restart
 
