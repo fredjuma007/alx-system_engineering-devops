@@ -1,0 +1,4 @@
+sudo ufw default deny incoming
+sudo ufw allow 22/tcpsudo
+ufw allow 443/tcpsudo 
+ufw allow 80/tcp
